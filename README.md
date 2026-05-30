@@ -1,4 +1,4 @@
-# A Mini Project To Find Top 10 Most Correlated stocks in Nifty 100 Index
+# A Mini Project To Find Top 10 Most Correlated stocks in Nifty 100 Index and Compare the Performance of NumPy Broadcasting and Pandas
 Here I used the help of yfinance, pandas and matplotlib to help me find the top 10 pairs of stocks. I also compared the performance Difference in pandas and numpy while calculating the volatility matrix. In pandas i used the help of .rolling().std() whereas in numpy i used the help of broadcasting.
 
 ### Why Broadcasting in NumPy?
