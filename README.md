@@ -1,9 +1,8 @@
 # A Mini Project To Find Top 10 Most Correlated stocks in Nifty 100 Index
-Here I used the help of yfinance, pandas and matplotlib to help me find the top 10 pairs of stocks.
+Here I used the help of yfinance, pandas and matplotlib to help me find the top 10 pairs of stocks. I also compared the performance Difference in pandas and numpy while calculating the volatility matrix. In pandas i used the help of .rolling().std() whereas in numpy i used the help of broadcasting.
 
-## Note:
-* This project is only in its 1st phase
-* The next addon to this project is to use numpy to calculate the volitility, correlation matrix etc and find out whether it will have any performance advantage over pandas if it were to use broadcasting. 
+### Why Broadcasting in NumPy?
+* Its a concept i recently learned and i was curious to know if it would be faster than pandas despite it taking more memory.
 
 # Correlation Matrix
 
@@ -30,3 +29,12 @@ Here are the top 10 pairs of stocks with their correlation values
 <img width="786" height="784" alt="image" src="https://github.com/user-attachments/assets/0b3d9267-3f1d-4550-b4ea-651b24ce193c" />
 
 <img width="786" height="784" alt="image" src="https://github.com/user-attachments/assets/536b6b98-4347-47de-a981-4f4915e08745" />
+
+# Performance Analysis
+
+<img width="531" height="72" alt="Screenshot From 2026-05-30 18-22-45" src="https://github.com/user-attachments/assets/d2eb356d-4c0f-4400-aa19-a0e9c084d808" />
+
+We can understand from the above image that Using Pandas was faster than NumPy Broadcasting method. This is due to the fact that pandas uses Cpython optimized c code in the background and also since the broadcasting method creates a huge 3D array to calculate the matrix.
+
+### Note:
+* There maybe faster methods in numpy to calculate the volatility matrix. But this Project is based on my curiosity.
